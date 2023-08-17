@@ -1,41 +1,60 @@
 import random
 
-print("Select your die.")
-print("Die: d4, d6, d8, d10, d12, d20")
+def d4():
+    d_number = int(input("How many dice do you want to roll?"))
+    d_4 = [random.randint(1, 4) for x in range(d_number)]
+    print (d_4)
 
-while True:
-    choice = input("Enter choice(d4/d6/d8/d10/d12/d20): ")
+def d6():
+    d_number = int(input("How many dice do you want to roll?"))
+    d_6 = [random.randint(1, 6) for x in range(d_number)]
+    print (d_6)
 
-    number = input("How many dice: ")
+def d8():
+    d_number = int(input("How many dice do you want to roll?"))
+    d_8 = [random.randint(1, 8) for x in range(d_number)]
+    print (d_8)
 
-    d4 = random.randint(1, 4)
-    d6 = random.randint(1, 6)
-    d8 = random.randint(1, 8)
-    d10 = random.randint(1, 10)
-    d12 = random.randint(1, 12)
-    d20 = random.randint(1, 20)
+def d10():
+    d_number = int(input("How many dice do you want to roll?"))
+    d_10 = [random.randint(1, 10) for x in range(d_number)]
+    print (d_10)
 
-    if choice == 'd4':
-        print (d4)
+def d12():
+    d_number = int(input("How many dice do you want to roll?"))
+    d_12 = [random.randint(1, 12) for x in range(d_number)]
+    print (d_12)
+
+def d20():
+    d_number = int(input("How many dice do you want to roll?"))
+    d_20 = [random.randint(1, 20) for x in range(d_number)]
+    print (d_20)
+
+    print("Select your die.")
+    print("Die: d4, d6, d8, d10, d12, d20")
+
+    while True:
+        choice = input("Enter choice(d4/d6/d8/d10/d12/d20): ")
+
+        if choice == 'd4':
+            d4()
        
-    elif choice == 'd6':
-        print (d6)
+        elif choice == 'd6':
+            d6()
       
-    elif choice == 'd8':
-        print (d8)
+        elif choice == 'd8':
+            d8()
       
-    elif choice == 'd10':
-        print (d10)
+        elif choice == 'd10':
+            d10()
       
-    elif choice == 'd12':
-        print (d12)
+        elif choice == 'd12':
+            d12()
       
-    elif choice == 'd20':
-        print (d20)
+        elif choice == 'd20':
+            d20()
       
-    next_roll = input("Want another roll? (yes/no): ")
-    if next_roll == 'no':
-        break
-      
-    else:
-        print("Invalid Input")
+        next_roll = input("Want another roll? (yes/no): ")
+        if next_roll == 'no':
+            print("Thank you!")
+            break
