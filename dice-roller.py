@@ -30,31 +30,31 @@ def d20():
     d_20 = [random.randint(1, 20) for x in range(d_number)]
     print (d_20)
 
-    print("Select your die.")
-    print("Die: d4, d6, d8, d10, d12, d20")
+print("Select your die.")
+print("Die: d4, d6, d8, d10, d12, d20")
 
-    while True:
-        choice = input("Enter choice(d4/d6/d8/d10/d12/d20): ")
+while True:
+    choice = input("Enter choice(d4/d6/d8/d10/d12/d20): ")
 
-        if choice == 'd4':
-            d4()
+    if choice == 'd4':
+        d4()
        
-        elif choice == 'd6':
-            d6()
+    elif choice == 'd6':
+        d6()
       
-        elif choice == 'd8':
-            d8()
+    elif choice == 'd8':
+        d8()
       
-        elif choice == 'd10':
-            d10()
+    elif choice == 'd10':
+        d10()
       
-        elif choice == 'd12':
-            d12()
+    elif choice == 'd12':
+        d12()
       
-        elif choice == 'd20':
-            d20()
+    elif choice == 'd20':
+        d20()
       
-        next_roll = input("Want another roll? (yes/no): ")
-        if next_roll == 'no':
-            print("Thank you!")
-            break
+    next_roll = input("Want another roll? (yes/no): ")
+    if next_roll == 'no':
+        print("Thank you!")
+        break
